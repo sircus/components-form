@@ -1,0 +1,65 @@
+:root {
+  --Form-padding: var(--g-controlsSpaceV) var(--g-controlsSpaceH);
+  --Form-fontSize: var(--g-fontSize);
+  --Form-borderRadius: var(--g-borderRadius);
+  --Form-bgColor: transparent;
+  --Form-borderSize: var(--g-controlsBorderSize);
+  --Form-borderColor: var(--g-controlsColor);
+  --Form-height: var(--g-controlsHeight);
+  --Form-shadow: inset 0 1px 1px rgba(0, 0, 0, .08);
+  --Form-transition: border ease-in-out .15s, box-shadow ease-in-out .15s;
+
+  --Form-focus-shadow: inset 0 1px 1px var(--Form-focus-color), 0 0 8px var(--Form-focus-color);
+  --Form-focus-color: var(--g-notice-light);
+  --Form-disable-bgColor: var(--g-mono-20);
+}
+
+/*　sircus-components-form
+======================================== */
+
+.Input,
+.Textarea,
+.Select {
+  font-size: var(--Form-fontSize);
+  line-height: inherit;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: var(--Form-padding);
+  transition: var(--Form-transition);
+  vertical-align: middle;
+  border: var(--Form-borderSize) solid var(--Form-borderColor);
+  border-radius: var(--Form-borderRadius);
+  background-color: var(--Form-bgColor);
+  box-shadow: var(--Form-shadow);
+}
+
+.Input,
+.Select {
+  height: var(--Form-height);
+}
+
+.Input {
+  -webkit-appearance: none;
+}
+
+.Input.is-focus,
+.Textarea.is-focus,
+.Select.is-focus,
+.Input:focus,
+.Textarea:focus,
+.Select:focus {
+  border: var(--Form-borderSize) solid var(--Form-focus-color);
+  outline: 0;
+  box-shadow: var(--Form-focus-shadow);
+}
+
+.Input.is-disabled,
+.Textarea.is-disabled,
+.Select.is-disabled,
+.Input[disabled],
+.Textarea[disabled],
+.Select[disabled] {
+  cursor: not-allowed;
+  opacity: .65;
+  background-color: var(--Form-disable-bgColor);
+}

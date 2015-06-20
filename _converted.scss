@@ -1,0 +1,66 @@
+
+// Converted Variables
+
+$Form-padding: $g-controlsSpaceV $g-controlsSpaceH !default;
+$Form-fontSize: $g-fontSize !default;
+$Form-borderRadius: $g-borderRadius !default;
+$Form-bgColor: transparent !default;
+$Form-borderSize: $g-controlsBorderSize !default;
+$Form-borderColor: $g-controlsColor !default;
+$Form-height: $g-controlsHeight !default;
+$Form-shadow: inset 0 1px 1px rgba(0, 0, 0, .08) !default;
+$Form-transition: border ease-in-out .15s, box-shadow ease-in-out .15s !default;
+$Form-focus-shadow: inset 0 1px 1px $Form-focus-color, 0 0 8px $Form-focus-color !default;
+$Form-focus-color: $g-notice-light !default;
+$Form-disable-bgColor: $g-mono-20 !default;
+
+
+/*　sircus-components-form
+======================================== */
+
+.Input,
+.Textarea,
+.Select {
+  font-size: $Form-fontSize;
+  line-height: inherit;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: $Form-padding;
+  transition: $Form-transition;
+  vertical-align: middle;
+  border: $Form-borderSize solid $Form-borderColor;
+  border-radius: $Form-borderRadius;
+  background-color: $Form-bgColor;
+  box-shadow: $Form-shadow;
+}
+
+.Input,
+.Select {
+  height: $Form-height;
+}
+
+.Input {
+  -webkit-appearance: none;
+}
+
+.Input.is-focus,
+.Textarea.is-focus,
+.Select.is-focus,
+.Input:focus,
+.Textarea:focus,
+.Select:focus {
+  border: $Form-borderSize solid $Form-focus-color;
+  outline: 0;
+  box-shadow: $Form-focus-shadow;
+}
+
+.Input.is-disabled,
+.Textarea.is-disabled,
+.Select.is-disabled,
+.Input[disabled],
+.Textarea[disabled],
+.Select[disabled] {
+  cursor: not-allowed;
+  opacity: .65;
+  background-color: $Form-disable-bgColor;
+}
