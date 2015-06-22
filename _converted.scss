@@ -10,8 +10,8 @@ $Form-borderColor: $g-controlsColor !default;
 $Form-height: $g-controlsHeight !default;
 $Form-shadow: inset 0 1px 1px rgba(0, 0, 0, .08) !default;
 $Form-transition: border ease-in-out .15s, box-shadow ease-in-out .15s !default;
-$Form-focus-shadow: inset 0 1px 1px $Form-focus-color, 0 0 8px $Form-focus-color !default;
 $Form-focus-color: $g-notice-light !default;
+$Form-focus-shadow: inset 0 1px 1px $Form-focus-color, 0 0 8px $Form-focus-color !default;
 $Form-disable-bgColor: $g-mono-20 !default;
 
 
