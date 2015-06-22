@@ -1,7 +1,7 @@
 {
   "name": "sircus-components-form",
   "description": "css From component module for Sircus.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://sircus.github.io",
   "keywords": [
     "scalable",
