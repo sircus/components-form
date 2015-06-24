@@ -3,6 +3,7 @@
 
 $Form-padding: $g-controlsSpaceV $g-controlsSpaceH !default;
 $Form-fontSize: $g-fontSize !default;
+$Form-width: auto !default;
 $Form-borderRadius: $g-borderRadius !default;
 $Form-bgColor: transparent !default;
 $Form-borderSize: $g-controlsBorderSize !default;
@@ -26,17 +27,22 @@ $Form-disable-bgColor: $g-mono-20 !default;
   display: inline-block;
   box-sizing: border-box;
   padding: $Form-padding;
+  width: $Form-width;
   transition: $Form-transition;
   vertical-align: middle;
   border: $Form-borderSize solid $Form-borderColor;
   border-radius: $Form-borderRadius;
-  background-color: $Form-bgColor;
   box-shadow: $Form-shadow;
 }
 
 .Input,
 .Select {
   height: $Form-height;
+}
+
+.Input,
+.Textarea {
+  background-color: $Form-bgColor;
 }
 
 .Input {

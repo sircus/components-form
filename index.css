@@ -1,6 +1,7 @@
 :root {
   --Form-padding: var(--g-controlsSpaceV) var(--g-controlsSpaceH);
   --Form-fontSize: var(--g-fontSize);
+  --Form-width: auto;
   --Form-borderRadius: var(--g-borderRadius);
   --Form-bgColor: transparent;
   --Form-borderSize: var(--g-controlsBorderSize);
@@ -25,17 +26,22 @@
   display: inline-block;
   box-sizing: border-box;
   padding: var(--Form-padding);
+  width: var(--Form-width);
   transition: var(--Form-transition);
   vertical-align: middle;
   border: var(--Form-borderSize) solid var(--Form-borderColor);
   border-radius: var(--Form-borderRadius);
-  background-color: var(--Form-bgColor);
   box-shadow: var(--Form-shadow);
 }
 
 .Input,
 .Select {
   height: var(--Form-height);
+}
+
+.Input,
+.Textarea {
+  background-color: var(--Form-bgColor);
 }
 
 .Input {
