@@ -1,18 +1,18 @@
 :root {
-  --Form-padding: var(--g-controlsSpaceV) var(--g-controlsSpaceH);
+  --Form-padding: var(--g-controls-spaceV) var(--g-controls-spaceH);
   --Form-fontSize: var(--g-fontSize);
   --Form-width: auto;
   --Form-borderRadius: var(--g-borderRadius);
-  --Form-bgColor: transparent;
-  --Form-borderSize: var(--g-controlsBorderSize);
-  --Form-borderColor: var(--g-controlsColor);
-  --Form-height: var(--g-controlsHeight);
+  --Form-fill: transparent;
+  --Form-borderSize: var(--g-controls-borderSize);
+  --Form-borderColor: var(--g-controls-color);
+  --Form-height: var(--g-controls-height);
   --Form-shadow: inset 0 1px 1px rgba(0, 0, 0, .08);
   --Form-transition: border ease-in-out .15s, box-shadow ease-in-out .15s;
 
   --Form-focus-color: var(--g-notice-light);
   --Form-focus-shadow: inset 0 1px 1px var(--Form-focus-color), 0 0 8px var(--Form-focus-color);
-  --Form-disable-bgColor: var(--g-mono-20);
+  --Form-disable-fill: var(--g-gray-20);
 }
 
 /*　sircus-components-form
@@ -41,7 +41,7 @@
 
 .Input,
 .Textarea {
-  background-color: var(--Form-bgColor);
+  background-color: var(--Form-fill);
 }
 
 .Input {
@@ -67,5 +67,5 @@
 .Select[disabled] {
   cursor: not-allowed;
   opacity: .65;
-  background-color: var(--Form-disable-bgColor);
+  background-color: var(--Form-disable-fill);
 }

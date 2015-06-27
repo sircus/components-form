@@ -1,19 +1,19 @@
 
 // Converted Variables
 
-$Form-padding: $g-controlsSpaceV $g-controlsSpaceH !default;
+$Form-padding: $g-controls-spaceV $g-controls-spaceH !default;
 $Form-fontSize: $g-fontSize !default;
 $Form-width: auto !default;
 $Form-borderRadius: $g-borderRadius !default;
-$Form-bgColor: transparent !default;
-$Form-borderSize: $g-controlsBorderSize !default;
-$Form-borderColor: $g-controlsColor !default;
-$Form-height: $g-controlsHeight !default;
+$Form-fill: transparent !default;
+$Form-borderSize: $g-controls-borderSize !default;
+$Form-borderColor: $g-controls-color !default;
+$Form-height: $g-controls-height !default;
 $Form-shadow: inset 0 1px 1px rgba(0, 0, 0, .08) !default;
 $Form-transition: border ease-in-out .15s, box-shadow ease-in-out .15s !default;
 $Form-focus-color: $g-notice-light !default;
 $Form-focus-shadow: inset 0 1px 1px $Form-focus-color, 0 0 8px $Form-focus-color !default;
-$Form-disable-bgColor: $g-mono-20 !default;
+$Form-disable-fill: $g-gray-20 !default;
 
 
 /*　sircus-components-form
@@ -42,7 +42,7 @@ $Form-disable-bgColor: $g-mono-20 !default;
 
 .Input,
 .Textarea {
-  background-color: $Form-bgColor;
+  background-color: $Form-fill;
 }
 
 .Input {
@@ -68,5 +68,5 @@ $Form-disable-bgColor: $g-mono-20 !default;
 .Select[disabled] {
   cursor: not-allowed;
   opacity: .65;
-  background-color: $Form-disable-bgColor;
+  background-color: $Form-disable-fill;
 }
