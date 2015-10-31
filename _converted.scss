@@ -67,6 +67,6 @@ $Form-disable-fill: $g-gray-20 !default;
 .Textarea[disabled],
 .Select[disabled] {
   cursor: not-allowed;
-  opacity: .65;
+  opacity: .5;
   background-color: $Form-disable-fill;
 }
