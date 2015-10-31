@@ -1,7 +1,7 @@
 :root {
   --Form-padding: var(--g-controls-spaceV) var(--g-controls-spaceH);
   --Form-fontSize: var(--g-fontSize);
-  --Form-width: auto;
+  --Form-width: 100%;
   --Form-borderRadius: var(--g-borderRadius);
   --Form-fill: transparent;
   --Form-borderSize: var(--g-controls-borderSize);
